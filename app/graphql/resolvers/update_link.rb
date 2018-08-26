@@ -11,11 +11,12 @@ class Resolvers::UpdateLink < GraphQL::Function
   # _obj - is parent object, which in this case is nil
   # args - are the arguments passed
   # _ctx - is the GraphQL context (which would be discussed later)
-  def call(_obj, args, _ctx)
+  def call(_obj, args, ctx)
     link = Link.find_by(id: args[:id])
     link.update(
       description: args[:description],
       url: args[:url],
+      # user: ctx[:current_user]
     )
     link
   end
