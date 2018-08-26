@@ -64,3 +64,6 @@ gem 'bcrypt', '~> 3.1.7'
 # search/filtering graphQL queries
 gem 'search_object', '1.2.0'
 gem 'search_object_graphql', '0.1'
+
+# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
+gem 'webpacker'

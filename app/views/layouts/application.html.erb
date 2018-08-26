@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GraphqlTutorial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stairway to Heaven</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script
+      src="https://use.fontawesome.com/8fa52fce7e.js"
+      data-version="4.7.0"
+      data-url="https://fontawesome.com/v4.7.0/icons/"
+    >
+    </script>
+    <%= yield :stylesheet %>
   </head>
 
   <body>
-    <%= yield %>
+    <%# yield %>
+
+    <%= yield :javascript %>
   </body>
 </html>

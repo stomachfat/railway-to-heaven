@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "strict": true,
+    "lib": ["es6", "dom", "esnext.asynciterable"],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "jsx": "react",
+    "target": "es5",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["./app/javascript/types/*"]
+    }
+  },
+  "exclude": ["**/*.spec.ts", "node_modules", "vendor", "public"],
+  "compileOnSave": false
+}
