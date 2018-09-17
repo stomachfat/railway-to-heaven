@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## How to Run the BE
 
-Things you may want to cover:
+Run `yarn run start:be`
 
-* Ruby version
+## How to hit the Graphiql endpoints
 
-* System dependencies
+Run BE and go to `http://numbers.localhost:3000/graphiql`
 
-* Configuration
+## How to run the FE
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run `yarn run start:fe`
+and go to `http://numbers.localhost:3000/`
