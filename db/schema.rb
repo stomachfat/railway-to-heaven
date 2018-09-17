@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180826022608) do
+ActiveRecord::Schema.define(version: 20180917052404) do
 
   create_table "links", force: :cascade do |t|
     t.string "url"
@@ -19,6 +19,37 @@ ActiveRecord::Schema.define(version: 20180826022608) do
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.index ["user_id"], name: "index_links_on_user_id"
+  end
+
+  create_table "scenarios", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "rent"
+    t.integer "other_income"
+    t.decimal "vacancy_rate", precision: 12, scale: 2
+    t.decimal "expense_rate", precision: 12, scale: 2
+    t.decimal "target_cap_rate", precision: 12, scale: 2
+    t.decimal "listing_price", precision: 12, scale: 2
+    t.decimal "offer_price", precision: 12, scale: 2
+    t.decimal "closing_costs", precision: 12, scale: 2
+    t.decimal "urgent_repair_costs", precision: 12, scale: 2
+    t.decimal "eventual_repair_costs", precision: 12, scale: 2
+    t.decimal "fair_market_value", precision: 12, scale: 2
+    t.decimal "after_repair_value", precision: 12, scale: 2
+    t.decimal "down_payment", precision: 12, scale: 2
+    t.decimal "annual_percentage_rate", precision: 12, scale: 2
+    t.decimal "mortgage_duration", precision: 12, scale: 2
+    t.decimal "monthly_principal_and_interest", precision: 12, scale: 2
+    t.decimal "capital_expenditures", precision: 12, scale: 2
+    t.decimal "maintenance", precision: 12, scale: 2
+    t.decimal "insurance", precision: 12, scale: 2
+    t.decimal "water", precision: 12, scale: 2
+    t.decimal "gas", precision: 12, scale: 2
+    t.decimal "electric", precision: 12, scale: 2
+    t.decimal "management", precision: 12, scale: 2
+    t.decimal "taxes", precision: 12, scale: 2
+    t.decimal "vacancy", precision: 12, scale: 2
+    t.decimal "miscellaneous_expenses", precision: 12, scale: 2
   end
 
   create_table "users", force: :cascade do |t|
