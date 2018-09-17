@@ -18,6 +18,7 @@ const GET_ALL_LINKS = gql`
 
 class Application extends Component {
   render() {
+    return <div>WTF</div>;
     return (
       <ApolloProvider client={client}>
         <Query query={GET_ALL_LINKS}>

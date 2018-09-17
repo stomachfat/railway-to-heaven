@@ -1,6 +1,10 @@
 {
   "name": "graphql-tutorial",
   "private": true,
+  "scripts": {
+    "start:be": "rails s",
+    "start:fe": "./bin/webpack-dev-server"
+  },
   "dependencies": {
     "@rails/webpacker": "3.5",
     "@types/js-cookie": "^2.1.0",
